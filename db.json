@@ -4,6 +4,9 @@
     { "id": 2, "name": "Produkt 2", "price": 29.99, "description": "Noch ein fantastisches Produkt!" },
     { "id": 3, "name": "Produkt 3", "price": 39.99, "description": "Das Beste auf dem Markt!" },
     { "id": 4, "name": "Produkt 4", "price": 49.99, "description": "Das teuerste Produkt!" },
-    { "id": 5, "name": "Produkt 5", "price": 59.99, "description": "Das billigste Produkt!" }
+    { "id": 5, "name": "Produkt 5", "price": 59.99, "description": "Das billigste Produkt!" },
+    { "id": 6, "name": "Produkt 6", "price": 69.99, "description": "Das Produkt mit dem längsten Namen!" },
+    { "id": 7, "name": "Produkt 7", "price": 79.99, "description": "Das Produkt mit dem kürzesten Namen!" },
+    { "id": 8, "name": "Produkt 8", "price": 89.99, "description": "Das Produkt mit der längsten Beschreibung!" }
   ]
 }
