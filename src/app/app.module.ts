@@ -4,16 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { HomeComponent } from './components/home/home.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { AdminComponent } from './components/admin/admin.component';
+import {MatCard, MatCardContent, MatCardTitle} from "@angular/material/card";
+import {MatButton} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
+import {HomeComponent} from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ProductDetailsComponent,
     CartComponent,
     CheckoutComponent,
@@ -21,7 +23,13 @@ import { AdminComponent } from './components/admin/admin.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCard,
+    MatCardTitle,
+    MatCardContent,
+    MatButton,
+    HttpClientModule,
+    HomeComponent
   ],
   providers: [
     provideAnimationsAsync()

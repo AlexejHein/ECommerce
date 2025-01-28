@@ -1,1 +1,8 @@
-<p>home works!</p>
+<mat-card *ngFor="let product of products" class="product-card">
+  <mat-card-title>{{ product.name }}</mat-card-title>
+  <mat-card-content>
+    <p>{{ product.description }}</p>
+    <p>{{ product.price | currency:'EUR' }}</p>
+  </mat-card-content>
+  <button mat-raised-button color="primary" [routerLink]="['/product', product.id]">Details</button>
+</mat-card>
