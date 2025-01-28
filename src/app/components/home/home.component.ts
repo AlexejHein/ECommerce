@@ -3,12 +3,12 @@ import { ProductService} from '../../services/product.service';
 import {MatCardModule} from '@angular/material/card';
 import {CommonModule} from '@angular/common';
 import {MatButton} from '@angular/material/button';
-import {RouterLink} from '@angular/router';
+import {RouterLink, RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true, // Standalone aktiviert
-  imports: [CommonModule, MatCardModule, MatButton, RouterLink], // Wichtige Module importieren
+  imports: [CommonModule, MatCardModule, MatButton, RouterLink, RouterModule], // Wichtige Module importieren
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

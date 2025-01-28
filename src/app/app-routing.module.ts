@@ -7,11 +7,12 @@ import {ProductDetailsComponent} from './components/product-details/product-deta
 import {HomeComponent} from './components/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'product/:id', component: ProductDetailsComponent },
-  { path: 'cart', component: CartComponent },
-  { path: 'checkout', component: CheckoutComponent },
-  { path: 'admin', component: AdminComponent },
+  { path: '', component: HomeComponent }, // Startseite
+  { path: 'product/:id', component: ProductDetailsComponent }, // Produktdetails
+  { path: 'cart', component: CartComponent }, // Warenkorb
+  { path: 'checkout', component: CheckoutComponent }, // Checkout
+  { path: 'admin', component: AdminComponent }, // Admin-Bereich
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <!-- Logo -->
+  <span class="logo">Mein Shop</span>
+
+  <!-- Desktop-Menü -->
+  <div class="menu-links" fxFlex fxLayout="row" fxLayoutAlign="end center" fxHide.lt-md>
+    <a mat-button routerLink="/">Startseite</a>
+    <a mat-button routerLink="/cart">Warenkorb</a>
+    <a mat-button routerLink="/checkout">Kasse</a>
+  </div>
+
+  <!-- Hamburger-Menü für mobile Geräte -->
+  <button mat-icon-button (click)="sidenav.toggle()" fxShow.lt-md>
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <!-- Sidenav -->
+  <mat-sidenav #sidenav mode="over">
+    <a mat-list-item routerLink="/" (click)="sidenav.close()">Startseite</a>
+    <a mat-list-item routerLink="/cart" (click)="sidenav.close()">Warenkorb</a>
+    <a mat-list-item routerLink="/checkout" (click)="sidenav.close()">Kasse</a>
+  </mat-sidenav>
+
+</mat-sidenav-container>
