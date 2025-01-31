@@ -1,8 +1,17 @@
-<mat-card *ngFor="let product of products" class="product-card">
-  <mat-card-title>{{ product.name }}</mat-card-title>
-  <mat-card-content>
-    <p>{{ product.description }}</p>
-    <p>{{ product.price | currency:'EUR' }}</p>
-  </mat-card-content>
-  <button mat-raised-button color="primary" [routerLink]="['/product', product.id]">Details</button>
-</mat-card>
+
+<div class="jumbo">
+  <h1>Willkommen in unserem Shop!</h1>
+  <p>Wir bieten eine große Auswahl an Produkten zu günstigen Preisen.</p>
+</div>
+
+<div class="container">
+
+  <mat-card *ngFor="let product of products" class="product-card">
+    <mat-card-title>{{ product.name }}</mat-card-title>
+    <mat-card-content>
+      <p>{{ product.description }}</p>
+      <p>{{ product.price | currency:'EUR' }}</p>
+    </mat-card-content>
+    <button mat-raised-button color="primary" [routerLink]="['/product', product.id]">Details</button>
+  </mat-card>
+</div>

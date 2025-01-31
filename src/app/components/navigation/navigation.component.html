@@ -9,18 +9,8 @@
     <a mat-button routerLink="/checkout">Kasse</a>
   </div>
 
-  <!-- Hamburger-Menü für mobile Geräte -->
-  <button mat-icon-button (click)="sidenav.toggle()" fxShow.lt-md>
-    <mat-icon>menu</mat-icon>
+  <button mat-icon-button fxHide.lt-md>
+    <mat-icon>shopping_cart</mat-icon>
   </button>
 </mat-toolbar>
 
-<mat-sidenav-container class="sidenav-container">
-  <!-- Sidenav -->
-  <mat-sidenav #sidenav mode="over">
-    <a mat-list-item routerLink="/" (click)="sidenav.close()">Startseite</a>
-    <a mat-list-item routerLink="/cart" (click)="sidenav.close()">Warenkorb</a>
-    <a mat-list-item routerLink="/checkout" (click)="sidenav.close()">Kasse</a>
-  </mat-sidenav>
-
-</mat-sidenav-container>
